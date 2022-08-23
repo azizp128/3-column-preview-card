@@ -1,0 +1,152 @@
+:root {
+  --clr-card-1: hsl(31, 77%, 52%);
+  --clr-card-2: hsl(184, 100%, 22%);
+  --clr-card-3: hsl(179, 100%, 13%);
+  --clr-paragraph: hsla(0, 0%, 100%, 0.75);
+  --clr-bg-head-but: hsl(0, 0%, 95%);
+  --fnt-title: "Big Shoulders Display";
+  --fnt-body: "Lexend Deca", "Courier New", Courier;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  font-family: var(--fnt-body);
+  background-color: var(--clr-bg-head-but);
+}
+
+.card p {
+  color: var(--clr-paragraph);
+}
+
+.card h1 {
+  color: var(--clr-bg-head-but);
+}
+
+.button-1,
+.button-2,
+.button-3 {
+  background-color: var(--clr-bg-head-but);
+}
+
+.card {
+  margin: 2.8rem 1.2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-1,
+.card-2,
+.card-3 {
+  min-height: 50vh;
+  padding: 3rem;
+}
+
+.card-1 h1,
+.card-2 h1,
+.card-3 h1 {
+  text-transform: uppercase;
+  font-family: var(--fnt-title);
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-size: 2.5em;
+}
+
+.card .card-1 .button-1,
+.card .card-2 .button-2,
+.card .card-3 .button-3 {
+  min-width: 10em;
+  min-height: 3.2em;
+  border-radius: 100px;
+  border: 0;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.card .card-1 .button-1:hover,
+.card .card-2 .button-2:hover,
+.card .card-3 .button-3:hover {
+  background-color: transparent;
+  color: var(--clr-bg-head-but);
+  border: 2px solid var(--clr-bg-head-but);
+}
+
+.card .card-1 .button-1 {
+  color: var(--clr-card-1);
+  font-weight: 400;
+}
+
+.card .card-2 .button-2 {
+  color: var(--clr-card-2);
+  font-weight: 400;
+}
+
+.card .card-3 .button-3 {
+  color: var(--clr-card-3);
+  font-weight: 400;
+}
+
+.card .card-1 {
+  background-color: var(--clr-card-1);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.card .card-2 {
+  background-color: var(--clr-card-2);
+}
+
+.card .card-3 {
+  background-color: var(--clr-card-3);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* Responsive Breakpoint */
+@media (min-width: 900px) {
+  .container {
+    min-height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .card-1,
+  .card-2,
+  .card-3 {
+    width: 15vw;
+    min-height: 55vh;
+  }
+
+  .card .card-1 {
+    border-radius: 0;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+  }
+
+  .card .card-3 {
+    border-radius: 0;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+  .card .card-1 .button-1,
+  .card .card-2 .button-2,
+  .card .card-3 .button-3 {
+    margin-top: 4em;
+  }
+}
