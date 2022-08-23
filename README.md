@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [SOLUTION](https://your-solution-url.com)
-- Live Site URL: [LIVE SITE](https://your-live-site-url.com)
+- Solution URL: [SOLUTION](https://www.frontendmentor.io/solutions/responsive-3-column-preview-card-using-css-flexbox-yQCb-6n2nI)
+- Live Site URL: [LIVE SITE](https://azizp128.github.io/3-column-preview-card/)
 
 ## My process
 
